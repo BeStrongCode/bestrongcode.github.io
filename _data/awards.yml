@@ -1,15 +1,13 @@
-# Fictional sample data for layout preview. Replace with actual competitions and awards.
 - year: 2026
-  name: Example Video Super-Resolution Challenge
-  result: First Prize
-  organizer: Example Computer Vision Workshop
+  name: CVPR 2026 NTIRE Raindrop Removal Challenge
+  result: Third Place
+  role: Team Leader
 
 - year: 2025
-  name: Example Image and Video Restoration Challenge
-  result: Runner-up
-  organizer: Example Visual Computing Symposium
+  name: CVPR 2025 NTIRE Raindrop Removal Challenge
+  result: First Place
+  role: Team Leader
 
 - year: 2025
-  name: Example Graduate Research Scholarship
-  result: Scholarship Recipient
-  organizer: Example Research Foundation
+  name: National Scholarship for Graduate Students
+  result: Recipient
