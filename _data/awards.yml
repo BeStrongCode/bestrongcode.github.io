@@ -1,0 +1,15 @@
+# Fictional sample data for layout preview. Replace with actual competitions and awards.
+- year: 2026
+  name: Example Video Super-Resolution Challenge
+  result: First Prize
+  organizer: Example Computer Vision Workshop
+
+- year: 2025
+  name: Example Image and Video Restoration Challenge
+  result: Runner-up
+  organizer: Example Visual Computing Symposium
+
+- year: 2025
+  name: Example Graduate Research Scholarship
+  result: Scholarship Recipient
+  organizer: Example Research Foundation

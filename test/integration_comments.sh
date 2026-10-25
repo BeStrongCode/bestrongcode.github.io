@@ -11,6 +11,10 @@ cleanup() {
 trap cleanup EXIT
 
 cat >"${tmp_override}" <<'YAML'
+# Keep integration fixtures independent of the personal site's excluded posts.
+# Explicit includes take precedence over the production exclusion of test/.
+include: ["_pages", "test/"]
+disqus_shortname: al-folio
 giscus:
   repo: alshedivat/al-folio
   repo_id: R_kgDOExample
@@ -22,6 +26,13 @@ bundle exec jekyll build --config "_config.yml,${tmp_override}" -d "${tmp_site}"
 
 giscus_page="${tmp_site}/blog/2022/giscus-comments/index.html"
 disqus_page="${tmp_site}/blog/2015/disqus-comments/index.html"
+
+for page in "${giscus_page}" "${disqus_page}"; do
+  if [ ! -f "${page}" ]; then
+    echo "comments integration fixture was not generated at ${page}" >&2
+    exit 1
+  fi
+done
 
 grep -q 'https://giscus.app/client.js' "${giscus_page}"
 if grep -q 'giscus comments misconfigured' "${giscus_page}"; then

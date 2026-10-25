@@ -11,6 +11,8 @@ cleanup() {
 trap cleanup EXIT
 
 cat >"${tmp_override}" <<'YAML'
+# Render dedicated fixtures even when the personal site excludes sample posts.
+include: ["_pages", "test/"]
 giscus:
   repo: alshedivat/al-folio
   repo_id: R_kgDOExample
