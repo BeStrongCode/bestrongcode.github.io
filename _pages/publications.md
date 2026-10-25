@@ -2,14 +2,14 @@
 layout: page
 permalink: /publications/
 title: publications
-description: Fictional publication placeholders for layout preview.
+description: Research publications in image restoration and object detection.
 nav: true
 nav_order: 1
 ---
 
 <!-- _pages/publications.md -->
 
-_The entries below are fictional placeholders for layout preview and do not represent actual publications._
+<link rel="stylesheet" href="{{ '/assets/css/personal-publications.css' | relative_url }}">
 
 <!-- Bibsearch Feature -->
 

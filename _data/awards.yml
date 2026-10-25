@@ -1,11 +1,13 @@
 - year: 2026
-  name: CVPR 2026 NTIRE Raindrop Removal Challenge
-  result: Third Place
+  category: competition
+  name: CVPR 2026 NTIRE Challenge on Raindrop Removal
+  result: The 3rd Award
   role: Team Leader
 
 - year: 2025
-  name: CVPR 2025 NTIRE Raindrop Removal Challenge
-  result: First Place
+  category: competition
+  name: CVPR 2025 NTIRE Challenge on Day and Night Raindrop Removal for Dual-Focused Images
+  result: The 1st Award
   role: Team Leader
 
 - year: 2025

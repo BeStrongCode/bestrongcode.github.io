@@ -1,5 +1,5 @@
 ---
-layout: about
+layout: default
 title: about
 permalink: /
 subtitle: PhD Student, <a href="https://www.nankai.edu.cn/">Nankai University</a>
@@ -29,11 +29,12 @@ latest_posts:
       height="1350"
       style="display: block; width: 100%; height: auto; border-radius: 0.5rem;"
     >
-    <figcaption style="margin-top: 0.75rem; text-align: center; font-size: 1.25rem; font-weight: 600;">
-      {{ site.first_name | escape }} {{ site.last_name | escape }}
-    </figcaption>
   </figure>
   <div class="about-biography" style="flex: 1 1 320px; min-width: 0;">
+    <header class="about-identity" style="margin: 0 0 1.25rem;">
+      <h1 style="margin: 0; font-size: 2rem; line-height: 1.2; font-weight: 600;">{{ site.first_name | escape }} {{ site.last_name | escape }}</h1>
+      <p style="margin: 0.4rem 0 0; font-size: 1rem; line-height: 1.5;">{{ page.subtitle }}</p>
+    </header>
     <p>
       I am a PhD student at <a href="https://www.nankai.edu.cn/">Nankai University</a>, advised by
       <a href="https://li-chongyi.github.io/">Prof. Chongyi Li</a> and <a href="https://guochunle-zero.github.io/">Prof. Chun-Le Guo</a>.
@@ -48,7 +49,7 @@ latest_posts:
 
 ## Publications
 
-_The entries below are fictional placeholders for layout preview and do not represent actual publications._
+<link rel="stylesheet" href="{{ '/assets/css/personal-publications.css' | relative_url }}">
 
 <div class="publications">
 
@@ -60,11 +61,15 @@ _The entries below are fictional placeholders for layout preview and do not repr
 
 ## Competitions and Awards
 
-<ul>
+<ul class="awards-list">
   {% for award in site.data.awards %}
   <li>
+    {% if award.category == 'competition' %}
+    <strong>{{ award.result | escape }} of {{ award.name | escape }}</strong>{% if award.role %} ({{ award.role | escape }}){% endif %}
+    {% else %}
     <strong>{{ award.year }} &mdash; {{ award.name | escape }}</strong><br>
-    {{ award.result | escape }}{% if award.role %} ({{ award.role | escape }}){% endif %}
+    {{ award.result | escape }}
+    {% endif %}
   </li>
   {% endfor %}
 </ul>
