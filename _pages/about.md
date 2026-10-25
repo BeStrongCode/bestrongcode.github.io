@@ -65,7 +65,8 @@ latest_posts:
   {% for award in site.data.awards %}
   <li>
     {% if award.category == 'competition' %}
-    <strong>{{ award.result | escape }} of {{ award.name | escape }}</strong>{% if award.role %} ({{ award.role | escape }}){% endif %}
+    <strong><span class="award-highlight">{{ award.result | escape }}</span> of {{ award.name | escape }}</strong>{% if award.role %}
+    <span class="award-highlight">({{ award.role | escape }})</span>{% endif %}
     {% else %}
     <strong>{{ award.year }} &mdash; {{ award.name | escape }}</strong><br>
     {{ award.result | escape }}
