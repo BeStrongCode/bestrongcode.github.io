@@ -1,0 +1,13 @@
+/* Keep transparent scientific diagrams legible in both light and dark themes. */
+.publications img.preview {
+  background-color: #fff;
+  object-fit: contain;
+}
+
+.awards-list {
+  color: #7e22ce;
+}
+
+html[data-theme="dark"] .awards-list {
+  color: #c084fc;
+}
