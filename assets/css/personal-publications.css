@@ -4,10 +4,14 @@
   object-fit: contain;
 }
 
-.awards-list {
+.publications .links {
+  display: none;
+}
+
+.awards-list .award-highlight {
   color: #7e22ce;
 }
 
-html[data-theme="dark"] .awards-list {
+html[data-theme="dark"] .awards-list .award-highlight {
   color: #c084fc;
 }
