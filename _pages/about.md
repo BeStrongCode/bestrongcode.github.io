@@ -44,7 +44,9 @@ latest_posts:
       <a href="https://baike.baidu.com/item/%E5%BC%A0%E8%90%8C%E8%90%8C/3998470?fr=aladdin">Prof. Mengmeng Zhang</a> and
       <a href="https://graduate.buu.edu.cn/art/2026/3/1/art_30716_822945.html">Prof. Hongyuan Jing</a>.
     </p>
-    <p>My research focuses on <strong>video super-resolution</strong>.</p>
+    <p>
+    My research interests cover <strong> Video super-resolution, Object detection, All-in-one image restoration, and Raindrop removal. </strong>.
+    </p>
   </div>
 </div>
 
