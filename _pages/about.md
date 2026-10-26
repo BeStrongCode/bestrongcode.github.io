@@ -41,7 +41,7 @@ latest_posts:
     </p>
     <p>
       Previously, I received my master's degree from <a href="https://www.buu.edu.cn/">Beijing Union University</a>, under the supervision of
-      Prof. Mengmeng Zhang and Prof. Hongyuan Jing.
+      <a href="https://baike.baidu.com/item/%E5%BC%A0%E8%90%8C%E8%90%8C/3998470?fr=aladdin/"> Prof. Mengmeng Zhang </a>and <a href="https://graduate.buu.edu.cn/art/2026/3/1/art_30716_822945.html/"> Prof. Hongyuan Jing.
     </p>
     <p>My research focuses on <strong>video super-resolution</strong>.</p>
   </div>
