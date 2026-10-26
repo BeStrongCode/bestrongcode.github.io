@@ -9,7 +9,7 @@ nav_order: 1
 
 <!-- _pages/publications.md -->
 
-<link rel="stylesheet" href="{{ '/assets/css/personal-publications.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/personal-publications.css' | relative_url | bust_file_cache }}">
 
 <!-- Bibsearch Feature -->
 
